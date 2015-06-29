@@ -1,0 +1,38 @@
+{
+  "name": "gulp-sassyclean",
+  "version": "0.0.0",
+  "description": "Find and clean up unused Sass modules from your project build.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/ryanburgess/gulp-sassyclean",
+  "bugs": {
+    "url": "https://github.com/ryanburgess/gulp-sassyclean/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ryanburgess/gulp-sassyclean.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "sassyclean",
+    "sassy",
+    "clean",
+    "javascript",
+    "node",
+    "sass",
+    "css"
+  ],
+  "dependencies": {
+    "path": "^0.11.14",
+    "stream": "0.0.2"
+  },
+  "devDependencies": {},
+  "author": "Ryan Burgess @burgessdryan",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT"
+}
