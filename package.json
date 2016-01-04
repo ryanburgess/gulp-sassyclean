@@ -29,8 +29,20 @@
     "path": "^0.11.14",
     "stream": "0.0.2"
   },
-  "devDependencies": {},
-  "author": "Ryan Burgess @burgessdryan",
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta4",
+    "eslint": "^1.10.3",
+    "eslint-plugin-babel": "^3.0.0",
+    "ghooks": "^1.0.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-jsonlint": "^1.1.1",
+    "gulp-nodeunit": "0.0.5",
+    "jshint": "^2.9.1-rc1",
+    "jshint-stylish": "^2.1.0",
+    "tape": "^4.2.2"
+  },
+  "author": "Ryan Burgess",
   "engines": {
     "node": ">=0.10.0"
   },
