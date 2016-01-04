@@ -42,6 +42,14 @@
     "jshint-stylish": "^2.1.0",
     "tape": "^4.2.2"
   },
+  "config": {
+    "ghooks": {
+      "pre-commit": "gulp lint",
+      "pre-push": "gulp test",
+      "post-merge": "npm install",
+      "post-rewrite": "npm install"
+    }
+  },
   "author": "Ryan Burgess",
   "engines": {
     "node": ">=0.10.0"
