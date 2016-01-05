@@ -26,7 +26,11 @@
     "css"
   ],
   "dependencies": {
+    "fs-extra": "^0.26.3",
+    "gulp-util": "^3.0.7",
+    "object-assign": "^4.0.1",
     "path": "^0.11.14",
+    "sassyclean": "^1.0.1",
     "stream": "0.0.2"
   },
   "devDependencies": {

@@ -11,6 +11,15 @@ gulp.task('lint', function () {
   .pipe(eslint.failAfterError());
 });
 
+var gulpsassyclean = require('./index.js');
+gulp.task('sassyclean', function () {
+  return gulp.src(['./sass/*.scss'])
+    .pipe(gulpsassyclean({
+      remove: false,
+      days: null
+    }));
+});
+
 // JSON Lint
 gulp.task('jsonlint', function() {
   return gulp.src(['./*.json'])
