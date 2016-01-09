@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gulp Sassyclean</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="http://ryanburgess.github.io/docufy/public/css/docufy.css" type="text/css" media="screen">
+<meta name="description" content="Find and clean up unused Sass modules from your project build."/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+</head>
+<body>
+<div class="container">
+<h1>Gulp Sassyclean</h1>
+
+<p><a href="http://badge.fury.io/js/gulp-sassyclean"><img alt="npm version" src="https://badge.fury.io/js/gulp-sassyclean.svg"/></a> <a href="https://github.com/ryanburgess/gulp-sassyclean"><img alt="npm" src="https://img.shields.io/npm/dm/gulp-sassyclean.svg"/></a> <a href="https://travis-ci.org/ryanburgess/gulp-sassyclean"><img alt="Build Status" src="https://travis-ci.org/ryanburgess/gulp-sassyclean.svg?branch=master"/></a></p>
+
+<p><img alt="SassyClean logo" src="https://raw.github.com/ryanburgess/gulp-sassyclean/master/sassyclean.png"/></p>
+
+<p>Gulp SassyClean scans a project for partials that are never imported. SassyClean provides the option to automatically delete the unused partials or display the file name as a console log.</p>
+
+<h2>Getting Started</h2>
+
+<p>If you haven&#39;t used [grunt][] before, be sure to check out the [Getting Started][] guide, as it explains how to create a [gruntfile][Getting Started] as well as install and use grunt plugins. Once you&#39;re familiar with that process, install this plugin with this command:</p>
+
+<p><code> npm install gulp-sassyclean --save-dev </code></p>
+
+<p>Then, add it to your <code>gulpfile.js</code>:</p>
+
+<p><code></code>`js
+var sassyclean = require(&#39;gulp-sassyclean&#39;);</p>
+
+<p>gulp.task(&#39;sassyclean&#39;, function () {
+  return gulp.src([&#39;./sass/*.scss&#39;])
+    .pipe(gulpsassyclean({
+      directory: &#39;modules&#39;,
+      remove: false
+    }));
+});
+<code></code>`</p>
+
+<h3>Options</h3>
+
+<h4>directory</h4>
+
+<p>Type: <code>String</code>
+Default value: <code>&#39;modules&#39;</code></p>
+
+<p>The directory option provides the ability to set a directory that contain Sass modules.</p>
+
+<h4>remove</h4>
+
+<p>Type: <code>Boolean</code>
+Default value: <code>false</code></p>
+
+<p>The ablity to automatically delete unused file reference from the project.</p>
+
+<h2>Related</h2>
+
+<ul><li><a href="https://github.com/ryanburgess/grunt-sassyclean">Grunt SassyClean</a></li><li><a href="https://github.com/ryanburgess/sassysass">Sassy Sass</a></li></ul>
+
+<h2>Contributing</h2>
+
+<ol><li>Fork it</li><li>Run <code>npm install</code></li><li>Run Gulp watch <code>gulp</code></li><li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li><li>Commit your changes (<code>git commit -am &quot;Add some feature&quot;</code>)</li><li>Push to the branch (<code>git push origin my-new-feature</code>)</li><li>Create new Pull Request</li></ol>
+
+<h2>License</h2>
+
+<p>MIT © <a href="http://github.com/ryanburgess">Ryan Burgess</a></p><a href="git://github.com/ryanburgess/gulp-sassyclean.git" style="position: absolute; top: 0; right: 0; border: 0;"><img src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</div>
+</body>

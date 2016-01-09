@@ -1,0 +1,63 @@
+{
+  "name": "gulp-sassyclean",
+  "version": "0.0.1",
+  "description": "Find and clean up unused Sass modules from your project build.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "homepage": "https://github.com/ryanburgess/gulp-sassyclean",
+  "bugs": {
+    "url": "https://github.com/ryanburgess/gulp-sassyclean/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ryanburgess/gulp-sassyclean.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "sassyclean",
+    "sassysass",
+    "scss",
+    "sassy",
+    "clean",
+    "javascript",
+    "node",
+    "sass",
+    "css"
+  ],
+  "dependencies": {
+    "fs-extra": "^0.26.3",
+    "map-stream": "0.0.6",
+    "object-assign": "^4.0.1",
+    "sassyclean": "^1.0.1",
+    "stream": "0.0.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta4",
+    "eslint": "^1.10.3",
+    "eslint-plugin-babel": "^3.0.0",
+    "ghooks": "^1.0.1",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
+    "gulp-jsonlint": "^1.1.1",
+    "gulp-nodeunit": "0.0.5",
+    "jshint": "^2.9.1-rc1",
+    "jshint-stylish": "^2.1.0",
+    "tape": "^4.2.2"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "gulp lint",
+      "pre-push": "gulp test",
+      "post-merge": "npm install",
+      "post-rewrite": "npm install"
+    }
+  },
+  "author": "Ryan Burgess",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT"
+}
