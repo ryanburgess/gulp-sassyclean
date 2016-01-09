@@ -5,7 +5,7 @@ var jshintStyle = require('jshint-stylish');
 var nodeunit = require('gulp-nodeunit');
 
 gulp.task('lint', function () {
-  return gulp.src(['lib/**/*'])
+  return gulp.src(['index.js'])
   .pipe(eslint())
   .pipe(eslint.format())
   .pipe(eslint.failAfterError());
@@ -15,8 +15,8 @@ var gulpsassyclean = require('./index.js');
 gulp.task('sassyclean', function () {
   return gulp.src(['./sass/*.scss'])
     .pipe(gulpsassyclean({
-      remove: false,
-      days: null
+      directory: 'modules',
+      remove: true
     }));
 });
 
