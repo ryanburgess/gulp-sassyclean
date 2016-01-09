@@ -4,7 +4,7 @@
   "description": "Find and clean up unused Sass modules from your project build.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test"
   },
   "homepage": "https://github.com/ryanburgess/gulp-sassyclean",
   "bugs": {
