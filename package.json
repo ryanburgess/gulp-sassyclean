@@ -26,7 +26,10 @@
     "css"
   ],
   "dependencies": {
-    "path": "^0.11.14",
+    "fs-extra": "^0.26.3",
+    "map-stream": "0.0.6",
+    "object-assign": "^4.0.1",
+    "sassyclean": "^1.0.1",
     "stream": "0.0.2"
   },
   "devDependencies": {
