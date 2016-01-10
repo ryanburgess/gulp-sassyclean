@@ -30,7 +30,7 @@ var sassyclean = require(&#39;gulp-sassyclean&#39;);</p>
 
 <p>gulp.task(&#39;sassyclean&#39;, function () {
   return gulp.src([&#39;./sass/*.scss&#39;])
-    .pipe(gulpsassyclean({
+    .pipe(sassyclean({
       directory: &#39;modules&#39;,
       remove: false
     }));
